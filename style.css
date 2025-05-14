@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+ 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar .logo {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .navbar .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  
+ 
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+  }
+  
+  .section-1, .section-2 {
+    flex: 1;
+    padding: 1rem;
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 8px;
+  }
+  
+
+  
+ 
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar .nav-links {
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+  
+    .content {
+      flex-direction: column;
+      margin: 1rem;
+    }
+  
+    .section-1, .section-2 {
+      margin: 1rem 0;
+    }
+  }
+  
+
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .section-1, .section-2 {
+      width: 80%;
+      margin: 1rem;
+    }
+  }
+  
+ 
+  @media (min-width: 1025px) {
+    .content {
+      flex-direction: row;
+    }
+  
+    .section-1, .section-2 {
+      width: 45%;
+    }
+  }
+  
